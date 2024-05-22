@@ -133,21 +133,21 @@
 
         $(function () {
             $('form').submit(function () {
-                const text1    = $('input[name="1"]').val();
-                const text2 = $('input[name="2"]').val();
-                const text3  = $('input[name="3"]').val();
-                const text4  = $('input[name="4"]').val();
-                const text5 = $('input[name="5"]').val();
-                const text6 = $('input[name="6"]').val();
-                const text7  = $('input[name="7"]').val();
-                const text8  = $('input[name="8"]').val();
-                const text9 = $('input[name="9"]').val();
-                const text10 = $('input[name="10"]').val();
-                const text11  = $('input[name="11"]').val();
-                
+                const text1 = $('input[name="1"]').val();
+                const text2 = $('select[name="2"]').val();
+                const text3 = $('select[name="3"]').val();
+                const text4 = $('select[name="4"]').val();
+                const text5 = $('select[name="5"]').val();
+                const text6 = $('select[name="6"]').val();
+                const text7 = $('select[name="7"]').val();
+                const text8 = $('select[name="8"]').val();
+                const text9 = $('select[name="9"]').val();
+                const text10= $('select[name="10"]').val();
+                const text11= $('select[name="11"]').val();
                 const msg = `退職診断\n${text1}\n${text2}\n${text3}\n${text4}\n${text5}\n${text6}\n${text7}\n${text8}\n${text9}\n${text10}\n${text11}`;
-                sendText(msg);
 
+                console.log(msg)
+                sendText(msg);
                 return false;
             });
         });
